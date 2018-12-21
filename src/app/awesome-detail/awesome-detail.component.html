@@ -1,0 +1,14 @@
+<div *ngIf="awesome; else nothing ">
+  <h4>
+    {{awesome.tag}}
+  </h4>
+  <p> 
+    {{awesome.url}}
+  </p>
+  <p> 
+    {{awesome.descriptions}}
+  </p>
+</div>
+<ng-template #nothing>
+  <p>Nothing to show</p>
+</ng-template>
